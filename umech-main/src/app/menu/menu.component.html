@@ -1,0 +1,12 @@
+<div>
+  <mat-toolbar mat-icon-button color="primary" class="example-icon menu" aria-label="Example icon-button with menu icon">
+    <button mat-icon-button [matMenuTriggerFor]="menu" class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item  [routerLink]="['/listagemprofissionais']">Listar Profissionais</button>
+     
+      <button mat-menu-item [routerLink]="['/']">Sair</button>
+    </mat-menu>
+  </mat-toolbar>
+  </div>
